@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20211223 08:58:14.459" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20211223 09:01:39.132" rpa="false" schemaversion="2">
 <suite id="s1" name="Register" source="C:\Users\udayk\PycharmProjects\Test_Automation\Test_Cases\Register.robot">
 <test id="s1-t1" name="Test radiobutton">
 <kw name="launchbrowser" library="resources">
@@ -7,14 +7,14 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211223 08:58:14.669" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
-<status status="PASS" starttime="20211223 08:58:14.669" endtime="20211223 08:58:18.016"/>
+<msg timestamp="20211223 09:01:39.313" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20211223 09:01:39.313" endtime="20211223 09:01:42.574"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211223 08:58:18.017" endtime="20211223 08:58:18.151"/>
+<status status="PASS" starttime="20211223 09:01:42.575" endtime="20211223 09:01:42.689"/>
 </kw>
-<status status="PASS" starttime="20211223 08:58:14.668" endtime="20211223 08:58:18.151"/>
+<status status="PASS" starttime="20211223 09:01:39.313" endtime="20211223 09:01:42.689"/>
 </kw>
 <kw name="getbrowsertitle" library="resources">
 <var>${pagetitle}</var>
@@ -23,91 +23,91 @@
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20211223 08:58:18.160" level="INFO">${title} = nopCommerce demo store</msg>
-<status status="PASS" starttime="20211223 08:58:18.153" endtime="20211223 08:58:18.160"/>
+<msg timestamp="20211223 09:01:42.698" level="INFO">${title} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20211223 09:01:42.690" endtime="20211223 09:01:42.698"/>
 </kw>
-<msg timestamp="20211223 08:58:18.160" level="INFO">${pagetitle} = nopCommerce demo store</msg>
-<status status="PASS" starttime="20211223 08:58:18.152" endtime="20211223 08:58:18.160"/>
+<msg timestamp="20211223 09:01:42.698" level="INFO">${pagetitle} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20211223 09:01:42.690" endtime="20211223 09:01:42.698"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${pagetitle}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211223 08:58:18.160" endtime="20211223 08:58:18.161"/>
+<status status="PASS" starttime="20211223 09:01:42.699" endtime="20211223 09:01:42.700"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${pagetitle}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211223 08:58:18.161" level="INFO">nopCommerce demo store</msg>
-<status status="PASS" starttime="20211223 08:58:18.161" endtime="20211223 08:58:18.161"/>
+<msg timestamp="20211223 09:01:42.701" level="INFO">nopCommerce demo store</msg>
+<status status="PASS" starttime="20211223 09:01:42.700" endtime="20211223 09:01:42.701"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20211223 08:58:18.162" endtime="20211223 08:58:18.163"/>
+<status status="PASS" starttime="20211223 09:01:42.701" endtime="20211223 09:01:42.703"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath://a[contains(text(),'Register')]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20211223 08:58:18.163" level="INFO">Clicking link 'xpath://a[contains(text(),'Register')]'.</msg>
-<status status="PASS" starttime="20211223 08:58:18.163" endtime="20211223 08:58:19.771"/>
+<msg timestamp="20211223 09:01:42.703" level="INFO">Clicking link 'xpath://a[contains(text(),'Register')]'.</msg>
+<status status="PASS" starttime="20211223 09:01:42.703" endtime="20211223 09:01:43.244"/>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>Gender</arg>
 <arg>gender-male</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20211223 08:58:19.772" level="INFO">Selecting 'gender-male' from radio button 'Gender'.</msg>
-<status status="PASS" starttime="20211223 08:58:19.771" endtime="20211223 08:58:19.811"/>
+<msg timestamp="20211223 09:01:43.245" level="INFO">Selecting 'gender-male' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20211223 09:01:43.244" endtime="20211223 09:01:43.289"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:FirstName</arg>
 <arg>UdayKumar</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211223 08:58:19.812" level="INFO">Typing text 'UdayKumar' into text field 'id:FirstName'.</msg>
-<status status="PASS" starttime="20211223 08:58:19.811" endtime="20211223 08:58:19.902"/>
+<msg timestamp="20211223 09:01:43.290" level="INFO">Typing text 'UdayKumar' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20211223 09:01:43.290" endtime="20211223 09:01:43.373"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:LastName</arg>
 <arg>narsingoju</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211223 08:58:19.903" level="INFO">Typing text 'narsingoju' into text field 'id:LastName'.</msg>
-<status status="PASS" starttime="20211223 08:58:19.903" endtime="20211223 08:58:19.987"/>
+<msg timestamp="20211223 09:01:43.374" level="INFO">Typing text 'narsingoju' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20211223 09:01:43.374" endtime="20211223 09:01:43.454"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>DateOfBirthDay</arg>
 <arg>12</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20211223 08:58:19.989" level="INFO">Selecting options from selection list 'DateOfBirthDay' by value 12.</msg>
-<status status="PASS" starttime="20211223 08:58:19.988" endtime="20211223 08:58:20.053"/>
+<msg timestamp="20211223 09:01:43.455" level="INFO">Selecting options from selection list 'DateOfBirthDay' by value 12.</msg>
+<status status="PASS" starttime="20211223 09:01:43.455" endtime="20211223 09:01:43.496"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>DateOfBirthMonth</arg>
 <arg>December</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20211223 08:58:20.055" level="INFO">Selecting options from selection list 'DateOfBirthMonth' by label December.</msg>
-<status status="PASS" starttime="20211223 08:58:20.054" endtime="20211223 08:58:20.123"/>
+<msg timestamp="20211223 09:01:43.497" level="INFO">Selecting options from selection list 'DateOfBirthMonth' by label December.</msg>
+<status status="PASS" starttime="20211223 09:01:43.496" endtime="20211223 09:01:43.544"/>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <arg>DateOfBirthYear</arg>
 <arg>87</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20211223 08:58:20.124" level="INFO">Selecting options from selection list 'DateOfBirthYear' by index 87.</msg>
-<status status="PASS" starttime="20211223 08:58:20.124" endtime="20211223 08:58:21.068"/>
+<msg timestamp="20211223 09:01:43.545" level="INFO">Selecting options from selection list 'DateOfBirthYear' by index 87.</msg>
+<status status="PASS" starttime="20211223 09:01:43.544" endtime="20211223 09:01:44.448"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211223 08:58:24.076" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211223 08:58:21.068" endtime="20211223 08:58:24.076"/>
+<msg timestamp="20211223 09:01:47.452" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211223 09:01:44.449" endtime="20211223 09:01:47.452"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211223 08:58:24.076" endtime="20211223 08:58:26.220"/>
+<status status="PASS" starttime="20211223 09:01:47.453" endtime="20211223 09:01:49.573"/>
 </kw>
 <doc>verify output for Registration radio and dropdown</doc>
 <tag>DEBUG</tag>
-<status status="PASS" starttime="20211223 08:58:14.667" endtime="20211223 08:58:26.221"/>
+<status status="PASS" starttime="20211223 09:01:39.312" endtime="20211223 09:01:49.574"/>
 </test>
-<status status="PASS" starttime="20211223 08:58:14.460" endtime="20211223 08:58:26.222"/>
+<status status="PASS" starttime="20211223 09:01:39.134" endtime="20211223 09:01:49.575"/>
 </suite>
 <statistics>
 <total>
