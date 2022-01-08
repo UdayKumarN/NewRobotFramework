@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20211228 09:01:07.474" rpa="false" schemaversion="2">
+<suite id="s1" name="Register" source="C:\Users\udayk\PycharmProjects\Test_Automation\Test_Cases\Register.robot">
+<test id="s1-t1" name="Test radiobutton">
+<kw name="launchbrowser" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211228 09:01:07.618" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20211228 09:01:07.618" endtime="20211228 09:01:11.124"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211228 09:01:11.125" endtime="20211228 09:01:11.254"/>
+</kw>
+<status status="PASS" starttime="20211228 09:01:07.618" endtime="20211228 09:01:11.254"/>
+</kw>
+<kw name="getbrowsertitle" library="resources">
+<var>${pagetitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20211228 09:01:11.267" level="INFO">${title} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20211228 09:01:11.256" endtime="20211228 09:01:11.267"/>
+</kw>
+<msg timestamp="20211228 09:01:11.268" level="INFO">${pagetitle} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20211228 09:01:11.255" endtime="20211228 09:01:11.268"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211228 09:01:11.269" endtime="20211228 09:01:11.270"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211228 09:01:11.271" level="INFO">nopCommerce demo store</msg>
+<status status="PASS" starttime="20211228 09:01:11.270" endtime="20211228 09:01:11.271"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20211228 09:01:11.271" endtime="20211228 09:01:11.274"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Register')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211228 09:01:11.276" level="INFO">Clicking link 'xpath://a[contains(text(),'Register')]'.</msg>
+<status status="PASS" starttime="20211228 09:01:11.275" endtime="20211228 09:01:13.134"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>gender-male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20211228 09:01:13.135" level="INFO">Selecting 'gender-male' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20211228 09:01:13.135" endtime="20211228 09:01:13.244"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>UdayKumar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211228 09:01:13.247" level="INFO">Typing text 'UdayKumar' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20211228 09:01:13.246" endtime="20211228 09:01:13.437"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>narsingoju</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211228 09:01:13.439" level="INFO">Typing text 'narsingoju' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20211228 09:01:13.438" endtime="20211228 09:01:13.622"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>DateOfBirthDay</arg>
+<arg>12</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211228 09:01:13.624" level="INFO">Selecting options from selection list 'DateOfBirthDay' by value 12.</msg>
+<status status="PASS" starttime="20211228 09:01:13.623" endtime="20211228 09:01:13.728"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>DateOfBirthMonth</arg>
+<arg>December</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211228 09:01:13.731" level="INFO">Selecting options from selection list 'DateOfBirthMonth' by label December.</msg>
+<status status="PASS" starttime="20211228 09:01:13.730" endtime="20211228 09:01:13.849"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>DateOfBirthYear</arg>
+<arg>87</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211228 09:01:13.851" level="INFO">Selecting options from selection list 'DateOfBirthYear' by index 87.</msg>
+<status status="PASS" starttime="20211228 09:01:13.851" endtime="20211228 09:01:15.115"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 09:01:18.122" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211228 09:01:15.116" endtime="20211228 09:01:18.122"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211228 09:01:18.123" endtime="20211228 09:01:20.310"/>
+</kw>
+<doc>verify output for Registration radio and dropdown</doc>
+<tag>DEBUG</tag>
+<status status="PASS" starttime="20211228 09:01:07.617" endtime="20211228 09:01:20.311"/>
+</test>
+<status status="PASS" starttime="20211228 09:01:07.475" endtime="20211228 09:01:20.313"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">DEBUG</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
