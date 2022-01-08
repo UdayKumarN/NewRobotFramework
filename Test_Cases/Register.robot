@@ -21,6 +21,6 @@ Test radiobutton
     input text  id:LastName        narsingoju
     select from list by value   DateOfBirthDay  12
     select from list by label   DateOfBirthMonth    December
-    select from list by index   DateOfBirthYear     87
+    select from list by index   DateOfBirthYear     86
     sleep  3
     Close Browser
