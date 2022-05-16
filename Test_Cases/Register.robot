@@ -2,8 +2,9 @@
 Library     SeleniumLibrary
 Resource    ../Resources/resources.robot
 *** Variables ***
-#${browser}  executable_path="C:\Drivers\chromedriver.exe"
+${browser}  chrome
 ${url}  https://demo.nopcommerce.com/
+${executable_path}  C:\Drivers\chromedriver.exe
 *** Test Cases ***
 Test radiobutton
     [Documentation]  verify output for Registration radio and dropdown
