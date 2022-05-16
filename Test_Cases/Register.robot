@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 Resource    ../Resources/resources.robot
 *** Variables ***
-${browser}  webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
+${browser}  Chrome executable_path="C:\Drivers\chromedriver.exe"
 ${url}  https://demo.nopcommerce.com/
 *** Test Cases ***
 Test radiobutton
