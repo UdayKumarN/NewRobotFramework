@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 Resource    ../Resources/resources.robot
 *** Variables ***
-${browser}  edge
+${browser}  C:\Drivers\chromedriver.exe
 ${url}  https://demo.nopcommerce.com/
 *** Test Cases ***
 Test radiobutton
