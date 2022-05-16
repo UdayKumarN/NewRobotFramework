@@ -5,7 +5,6 @@ Library     SeleniumLibrary
 launchbrowser
     #open browser    chrome  executable_path:C:\Drivers\chromedriver.exe  ${url}
     create_webdriver  chrome  executable_path=C:\Drivers\chromedriver.exe
-
     #open browser    ${url}  ${browser}  ${executable_path}
     go to  ${url}
     maximize browser window
