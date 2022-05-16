@@ -3,7 +3,8 @@ Library     SeleniumLibrary
 
 *** Keywords ***
 launchbrowser
-    open browser    ${url}  ${browser}
+    open browser    chrome  executable_path:C:\Drivers\chromedriver.exe  ${url}
+   #open browser    ${url}  ${browser}
     maximize browser window
 
     # creation of user defined keywords with return value.
